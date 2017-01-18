@@ -182,6 +182,8 @@
 		<profile>
 			<id>chrome</id>
 			<properties>
+				<sauce.client.os>linux</sauce.client.os>
+				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
 				<site.url>http://www.google.com/</site.url>
 				<browser>chrome</browser>
@@ -192,8 +194,8 @@
 		<profile>
 			<id>ie</id>
 			<properties>
-				<sauce.client.os>win32</sauce.client.os>
-				<sauce.client.executable>sc.exe</sauce.client.executable>
+				<sauce.client.os>linux</sauce.client.os>
+				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
 				<browser>internet explorer</browser>
 				<browser.version>11</browser.version>
@@ -203,7 +205,7 @@
 		<profile>
 			<id>safari</id>
 			<properties>
-				<sauce.client.os>osx</sauce.client.os>
+				<sauce.client.os>linux</sauce.client.os>
 				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
 				<browser>safari</browser>
