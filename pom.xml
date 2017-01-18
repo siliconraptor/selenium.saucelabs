@@ -81,7 +81,6 @@
 						<configuration>
 							<url>${sauce.client.repo.url}/${sauce.client.version}/${sauce.client.os}/${sauce.client.executable}</url>
 							<outputDirectory>${project.build.directory}/sauce-client</outputDirectory>
-							<md5>5a9c462a660e188999d8d3b77b182f2e</md5>
 						</configuration>
 					</execution>
 				</executions>
