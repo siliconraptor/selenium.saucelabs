@@ -74,7 +74,7 @@
 				<executions>
 					<execution>
 						<id>pour-sauce</id>
-						<phase>generate-test-resources</phase>
+						<phase>process-resources</phase>
 						<goals>
 							<goal>wget</goal>
 						</goals>
@@ -92,7 +92,7 @@
 				<executions>
 					<execution>
 						<id>stir-sauce</id>
-						<phase>generate-test-resources</phase>
+						<phase>process-resources</phase>
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -107,7 +107,7 @@
 					</execution>
 					<execution>
 						<id>serve-sauce</id>
-						<phase>process-test-resources</phase>
+						<phase>process-resources</phase>
 						<goals>
 							<goal>exec</goal>
 						</goals>
