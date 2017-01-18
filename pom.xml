@@ -175,9 +175,6 @@
 				<browser.version>40.0</browser.version>
 				<platform>Linux</platform>
 			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
 		</profile>
 		<profile>
 			<id>chrome</id>
