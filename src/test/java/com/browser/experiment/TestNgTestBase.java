@@ -25,6 +25,7 @@ public class TestNgTestBase {
   protected static String gridHubUrl;
   protected static String baseUrl;
   protected static String driverPath;
+  protected static String pageTitle;
   protected static DesiredCapabilities capabilities;
 
   protected WebDriver driver;
@@ -36,11 +37,13 @@ public class TestNgTestBase {
     platform = PropertyLoader.loadProperty("platform");
     gridHubUrl = PropertyLoader.loadProperty("grid.url");
     baseUrl = PropertyLoader.loadProperty("base.url");
+    pageTitle = PropertyLoader.loadProperty("page.title");
 
 
     System.out.println("browser = " + browser);
     System.out.println("browser.version = " + version);
     System.out.println("platform = " + platform);
+    System.out.println("pageTitle = " + pageTitle);
     
     
     capabilities = new DesiredCapabilities(browser, version, Platform.fromString(platform));

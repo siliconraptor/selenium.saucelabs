@@ -21,7 +21,7 @@ public class SampleTestNgTest extends TestNgTestBase {
   public void testHomePageHasAHeader() {
   	System.out.println("baseURL = " + baseUrl);
     driver.get(baseUrl);
-    Assert.assertTrue("Google".equals(homepage.getTitle()));
+    Assert.assertTrue(pageTitle.equals(homepage.getTitle()));
     System.out.println("homepage.getTitle() = " + homepage.getTitle());
   }
 }
