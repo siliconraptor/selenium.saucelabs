@@ -171,6 +171,7 @@
 				<sauce.client.os>linux</sauce.client.os>
 				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
+				<page.title>Google</page.title>
 				<browser>firefox</browser>
 				<browser.version>40.0</browser.version>
 				<platform>Linux</platform>
@@ -182,7 +183,7 @@
 				<sauce.client.os>linux</sauce.client.os>
 				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
-				<site.url>http://www.google.com/</site.url>
+				<page.title>Google</page.title>
 				<browser>chrome</browser>
 				<browser.version>43</browser.version>
 				<platform>win7</platform>
@@ -194,6 +195,7 @@
 				<sauce.client.os>linux</sauce.client.os>
 				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
+				<page.title>Google</page.title>
 				<browser>internet explorer</browser>
 				<browser.version>11</browser.version>
 				<platform>win7</platform>
@@ -205,6 +207,7 @@
 				<sauce.client.os>linux</sauce.client.os>
 				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
+				<page.title>Google</page.title>
 				<browser>safari</browser>
 				<browser.version>10.0</browser.version>
 				<platform>OS X 10.11</platform>
