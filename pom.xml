@@ -79,7 +79,8 @@
 							<goal>wget</goal>
 						</goals>
 						<configuration>
-							<url>${sauce.client.repo.url}/${sauce.client.version}/${sauce.client.os}/${sauce.client.executable}</url>
+							<url>${sauce.client.url}</url>
+							<unpack>true</unpack>
 							<outputDirectory>${project.build.directory}/sauce-client</outputDirectory>
 						</configuration>
 					</execution>
@@ -166,10 +167,46 @@
 	<profiles>
 		<!-- browsers -->
 		<profile>
+			<id>linux-build-platform</id>
+			<activation>
+			<os>
+			  <name>linux</name>
+			  <family>unix</family>
+			  <arch>amd64</arch>
+			</os>
+		  	</activation>
+		  	<properties>
+		  		<sauce.client.url>https://saucelabs.com/downloads/sc-4.4.2-linux.tar.gz</sauce.client.url>
+		  		<sauce.client.executable>sc-4.4.2-linux/bin/sc</sauce.client.executable>
+		  	</properties>
+		</profile>
+		<profile>
+			<id>win32-build-platform</id>
+			<activation>
+			<os>
+			  <family>windows</family>
+			</os>
+		  </activation>
+		  <properties>
+		  	<sauce.client.url>https://saucelabs.com/downloads/sc-4.4.2-win32.zip</sauce.client.url>
+		  	<sauce.client.executable>sc-4.4.2-win32/bin/sc.exe</sauce.client.executable>
+		  </properties>
+		</profile>
+		<profile>
+			<id>mac-build-platform</id>
+			<activation>
+			<os>
+			  <family>mac</family>
+			</os>
+		  	</activation>
+			<properties>
+				<sauce.client.url>https://saucelabs.com/downloads/sc-4.4.2-osx.zip</sauce.client.url>
+		  		<sauce.client.executable>sc-4.4.2-osx/bin/sc</sauce.client.executable>
+		  	</properties>
+		</profile>
+		<profile>
 			<id>firefox</id>
 			<properties>
-				<sauce.client.os>linux</sauce.client.os>
-				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
 				<page.title>Google</page.title>
 				<browser>firefox</browser>
@@ -180,8 +217,6 @@
 		<profile>
 			<id>chrome</id>
 			<properties>
-				<sauce.client.os>linux</sauce.client.os>
-				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
 				<page.title>Google</page.title>
 				<browser>chrome</browser>
@@ -192,8 +227,6 @@
 		<profile>
 			<id>ie</id>
 			<properties>
-				<sauce.client.os>linux</sauce.client.os>
-				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
 				<page.title>Google</page.title>
 				<browser>internet explorer</browser>
@@ -204,8 +237,6 @@
 		<profile>
 			<id>safari</id>
 			<properties>
-				<sauce.client.os>linux</sauce.client.os>
-				<sauce.client.executable>sc</sauce.client.executable>
 				<base.url>http://www.google.com</base.url>
 				<page.title>Google</page.title>
 				<browser>safari</browser>
