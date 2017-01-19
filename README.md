@@ -14,10 +14,14 @@ This project assumes that you have the values available in your maven settings.x
 
 Ex.
 In my properties section of my settings.xml I have:
-      <sauce.client.repo.url>ARTIFACT-REPO-URL-PATH-TO-SAUCE-CLIENT-FOR-YOUR-OS</sauce.client.repo.url>
-			<sauce.labs.user>USERNAME</sauce.labs.user>
-			<sauce.labs.api.key>API-KEY</sauce.labs.api.key>
-			<sauce.grid.url>https://USERNAME:API-KEY@ondemand.saucelabs.com:443/wd/hub/</sauce.grid.url>
+
+        <sauce.client.repo.url>ARTIFACT-REPO-URL-PATH-TO-SAUCE-CLIENT-FOR-YOUR-OS</sauce.client.repo.url>
+      
+	<sauce.labs.user>USERNAME</sauce.labs.user>
+	
+	<sauce.labs.api.key>API-KEY</sauce.labs.api.key>
+	
+	<sauce.grid.url>https://USERNAME:API-KEY@ondemand.saucelabs.com:443/wd/hub/</sauce.grid.url>
       
 
 
