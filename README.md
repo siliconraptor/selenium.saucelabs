@@ -31,7 +31,8 @@ After your settings.xml file has been setup running the test is as simple as run
 
 Notice that 3 parameters are being passed into the maven process, the Profile, and 2 VM arguments
 
-The profile will activate the test against a specific browser, possible values are listed below
+The profile will activate the test against a specific browser, possible values are listed below.
+
 Profile values:
 ie
 chrome
@@ -40,9 +41,11 @@ safari
 
 
 Now to test a specific page a value needs to be passed into the VM using the property base.url, any webpage URL will work.
-ex.    -Dbase.url=www.google.com
+
+example:	-Dbase.url=www.google.com
 
 Now to validate the test we check the page title, we do this by passing in a page.title property.
-ex.    -Dpage.title=Google
+
+example:	-Dpage.title=Google
 
 That's it, Happy Testing!!!
